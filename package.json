@@ -1,0 +1,12 @@
+﻿{
+  "name": "tiruchendur-live-location-tracker",
+  "version": "1.0.0",
+  "description": "Live chariot location tracker API for Tiruchendur car festival website.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

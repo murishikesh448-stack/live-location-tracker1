@@ -1,0 +1,100 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A visitor-friendly guide to Subramaniya Swamy Temple, Tiruchendur with temple history, architecture, festivals, location, and visitor help."
+    />
+    <meta name="theme-color" content="#4a1f1a" />
+    <title>TIRUCHENDUR MURUGAN TEMPLE</title>
+    <link rel="preload" href="assets/murugan-DiJ382N2.jpg" as="image" />
+    <link rel="preload" href="assets/temple-DgJTSBsC.jpg" as="image" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar" aria-label="Temple header">
+        <a class="brand" href="#home" data-view-link="home" aria-label="Tiruchendur temple home">
+          <img src="assets/tiruchendur-logo.png" alt="" class="brand-mark" />
+          <span>
+            <strong>Tiruchendur</strong>
+            <small>Subramaniya Swamy Temple</small>
+          </span>
+        </a>
+        <nav class="top-actions" aria-label="Quick links">
+          <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Subramaniya%20Swamy%20Temple%20Tiruchendur" target="_blank" rel="noreferrer">Temple Map</a>
+          <button class="compact-button" type="button" data-view-link="chariot">Track Car</button>
+          <button class="compact-button" type="button" data-view-link="visitor">Visitor Help</button>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="home" aria-label="Temple overview">
+          <img id="heroImage" class="hero-image" src="assets/murugan-DiJ382N2.jpg" alt="" />
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p id="heroKicker" class="eyebrow">Murugan temple on the Bay of Bengal</p>
+            <h1 id="heroTitle">TIRUCHENDUR MURUGAN TEMPLE</h1>
+            <p id="heroText">
+              A sacred Arupadai Veedu shrine dedicated to Murugan, known for its seashore setting, Surasamharam festival, and Tamil temple architecture.
+            </p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <button class="primary-button" type="button" data-view-link="overview">Temple Details</button>
+              <button class="secondary-button" type="button" data-view-link="location">Location Guide</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="poster-section" aria-label="Temple sections">
+          <div class="section-heading">
+            <span class="section-kicker">Explore</span>
+            <h2>Tiruchendur temple guide</h2>
+          </div>
+          <div class="poster-frame">
+            <button class="poster-arrow" type="button" id="previousPoster" aria-label="Previous banner">&lt;</button>
+            <div class="poster-track" id="posterTrack" role="tablist" aria-label="Temple guide tabs"></div>
+            <button class="poster-arrow" type="button" id="nextPoster" aria-label="Next banner">&gt;</button>
+          </div>
+          <div class="banner-progress" aria-hidden="true">
+            <span id="bannerProgress"></span>
+          </div>
+        </section>
+
+        <section class="live-strip" aria-label="Temple highlights">
+          <article>
+            <span class="mini-label">Deity</span>
+            <strong>Murugan / Subramanya Swamy</strong>
+          </article>
+          <article>
+            <span class="mini-label">Sacred Group</span>
+            <strong>One of the Six Abodes of Murugan</strong>
+          </article>
+          <article>
+            <span class="mini-label">Location</span>
+            <strong>Tiruchendur, Thoothukudi district</strong>
+          </article>
+        </section>
+
+        <section class="content-stage" id="contentStage" aria-live="polite"></section>
+      </main>
+
+      <footer class="site-footer">
+        <span>TIRUCHENDUR MURUGAN TEMPLE</span>
+        <span>Temple facts adapted from Wikipedia and visitor tools kept local to this page.</span>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
