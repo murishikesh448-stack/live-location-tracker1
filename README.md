@@ -96,12 +96,13 @@ https://tiruchendur-car-festival.netlify.app/#chariot
 Current tracker API:
 
 ```text
-https://live-location-tracker-g1i6.onrender.com
+https://live-location-tracker1.onrender.com
 ```
 
 Use these live URLs:
 
 ```text
-https://locationsend.netlify.app/?api=https://live-location-tracker-g1i6.onrender.com
-https://tiruchendur-car-festival.netlify.app/?api=https://live-location-tracker-g1i6.onrender.com#chariot
+https://locationsend.netlify.app/?api=https://live-location-tracker1.onrender.com
+https://tiruchendur-car-festival.netlify.app/?api=https://live-location-tracker1.onrender.com#chariot
 ```
+

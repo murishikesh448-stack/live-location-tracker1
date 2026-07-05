@@ -7,7 +7,7 @@ const temple = {
 };
 
 const mapUrl = "https://www.google.com/maps/search/?api=1&query=Subramaniya%20Swamy%20Temple%20Tiruchendur";
-const defaultTrackerApiBase = "https://live-location-tracker-g1i6.onrender.com";
+const defaultTrackerApiBase = "https://live-location-tracker1.onrender.com";
 const trackerApiBase = getTrackerApiBase();
 const chariotLocationApi = `${trackerApiBase}/api/chariot-location`;
 const sharingPageBaseUrl = "https://locationsend.netlify.app/";
@@ -21,7 +21,7 @@ const sections = [
     kicker: "Murugan temple on the Bay of Bengal",
     heroText:
       "A sacred Arupadai Veedu shrine dedicated to Murugan, known for its seashore setting, Surasamharam festival, and Tamil temple architecture.",
-    image: asset("murugan-DiJ382N2.jpg"),
+    image: asset("tiruchendur-murugan-seashore.png"),
     color: "rgba(185, 54, 42, 0.72)",
   },
   {
@@ -32,7 +32,7 @@ const sections = [
     kicker: "Essential temple facts",
     heroText:
       "The temple is in Tiruchendur, Thoothukudi district, Tamil Nadu, and is administered by the Hindu Religious and Charitable Endowments Department of the Government of Tamil Nadu.",
-    image: asset("temple-DgJTSBsC.jpg"),
+    image: asset("tiruchendur-gopuram-blue-sky.png"),
     color: "rgba(217, 154, 38, 0.76)",
   },
   {
@@ -43,7 +43,7 @@ const sections = [
     kicker: "Festival highlights",
     heroText:
       "Surasamharam, the reenactment of Murugan's victory over Surapadman, is one of the temple's major observances and draws thousands of devotees.",
-    image: asset("chariot-g_yc9DdC.jpg"),
+    image: asset("tiruchendur-festival-alangaram.png"),
     color: "rgba(15, 118, 110, 0.72)",
   },
   {
@@ -54,7 +54,7 @@ const sections = [
     kicker: "Live car tracking",
     heroText:
       "Track the temple car on a Leaflet map when a phone near the chariot shares its GPS location to the website server.",
-    image: asset("chariot-g_yc9DdC.jpg"),
+    image: asset("tiruchendur-festival-alangaram.png"),
     color: "rgba(185, 54, 42, 0.72)",
   },
   {
@@ -65,7 +65,7 @@ const sections = [
     kicker: "Tamil architecture",
     heroText:
       "The temple complex stands at the eastern end of Tiruchendur near the sea, with a nine-tier gopuram and a sanctum described as being inside a cave.",
-    image: asset("hidden-BskVKGRC.jpg"),
+    image: asset("tiruchendur-gopuram-close.png"),
     color: "rgba(65, 108, 59, 0.72)",
   },
   {
@@ -76,7 +76,7 @@ const sections = [
     kicker: "Sacred story",
     heroText:
       "Temple tradition connects Tiruchendur with Murugan's battle against Surapadman and the divine vel that ends the asura's tyranny.",
-    image: asset("vadam-dWX4EioR.jpg"),
+    image: asset("tiruchendur-murugan-alangaram.png"),
     color: "rgba(37, 93, 141, 0.72)",
   },
   {
@@ -87,7 +87,7 @@ const sections = [
     kicker: "Tiruchendur, Tamil Nadu",
     heroText:
       "Open the map for directions to the temple or use this page's optional location tool to estimate your distance from Tiruchendur.",
-    image: asset("theppakulam-CF4UAQ5l.jpg"),
+    image: asset("tiruchendur-murugan-valli-deivanai.png"),
     color: "rgba(74, 31, 26, 0.72)",
   },
   {
@@ -98,7 +98,7 @@ const sections = [
     kicker: "Plan your visit",
     heroText:
       "Keep the seashore location, major festival crowds, ritual bathing customs, and basic emergency contacts in one easy place.",
-    image: asset("parking-map-BXw7iFp8.png"),
+    image: asset("tiruchendur-gopuram-blue-sky.png"),
     color: "rgba(111, 78, 55, 0.72)",
   },
 ];
@@ -237,7 +237,7 @@ function renderHome() {
             <button class="action-button is-alt" type="button" data-view-link="chariot">Track Car</button>
           </div>
         </div>
-        <img class="feature-image" src="${asset("temple-DgJTSBsC.jpg")}" alt="Temple view" />
+        <img class="feature-image" src="${asset("tiruchendur-gopuram-blue-sky.png")}" alt="Tiruchendur temple gopuram" />
       </div>
 
       <div class="stat-grid">
@@ -272,7 +272,7 @@ function renderOverview() {
             The temple is a Hindu shrine in Tiruchendur, Thoothukudi district, Tamil Nadu, India. It is dedicated to Murugan and is maintained by the Hindu Religious and Charitable Endowments Department, Government of Tamil Nadu.
           </p>
         </div>
-        <img class="feature-image" src="${asset("murugan-DiJ382N2.jpg")}" alt="Murugan temple artwork" />
+        <img class="feature-image" src="${asset("tiruchendur-murugan-seashore.png")}" alt="Murugan at Tiruchendur seashore temple" />
       </div>
       <div class="guide-grid">
         ${guideCard("Affiliation", "Hinduism, with Murugan worship at the center of the temple tradition.")}
@@ -294,7 +294,7 @@ function renderFestivals() {
             A reenactment of Murugan's victory over Surapadman is a major Tiruchendur festival and draws thousands of devotees. The temple is also associated with Vaikasi Visakam and Thaipusam.
           </p>
         </div>
-        <img class="feature-image" src="${asset("chariot-g_yc9DdC.jpg")}" alt="Festival procession" />
+        <img class="feature-image" src="${asset("tiruchendur-festival-alangaram.png")}" alt="Tiruchendur festival alangaram" />
       </div>
       <div class="timeline">
         ${festivalItem("Vaikasi", "Visakam", "Celebrates Murugan and remains one of the major festivals listed for the temple.")}
@@ -345,12 +345,12 @@ function renderArchitecture() {
             The complex measures about 91 m north to south and 65 m east to west. Its nine-tier gopuram rises about 157 ft, and the main entrance faces south into the first of two prakarams.
           </p>
         </div>
-        <img class="feature-image" src="${asset("hidden-BskVKGRC.jpg")}" alt="Temple architecture detail" />
+        <img class="feature-image" src="${asset("tiruchendur-gopuram-close.png")}" alt="Tiruchendur temple gopuram close view" />
       </div>
       <div class="gallery-grid">
-        ${galleryCard("Nine-Tier Gopuram", "A 157 ft tower gate is a major landmark of the temple.", asset("temple-DgJTSBsC.jpg"))}
-        ${galleryCard("Cave Sanctum", "The inner sanctum is described as being inside a cave, with Murugan as a saintly child.", asset("murugan-DiJ382N2.jpg"))}
-        ${galleryCard("Nali Kinaru", "A sacred freshwater well lies about 100 m south of the temple.", asset("theppakulam-CF4UAQ5l.jpg"))}
+        ${galleryCard("Nine-Tier Gopuram", "A 157 ft tower gate is a major landmark of the temple.", asset("tiruchendur-gopuram-blue-sky.png"))}
+        ${galleryCard("Cave Sanctum", "The inner sanctum is described as being inside a cave, with Murugan as a saintly child.", asset("tiruchendur-murugan-seashore.png"))}
+        ${galleryCard("Nali Kinaru", "A sacred freshwater well lies about 100 m south of the temple.", asset("tiruchendur-murugan-valli-deivanai.png"))}
       </div>
     </div>
   `;
@@ -367,7 +367,7 @@ function renderMythology() {
             In the temple tradition, Murugan battles Surapadman at Tiruchendur. When Surapadman takes the form of a great mango tree, Murugan splits it with the vel; the halves become the peacock and rooster.
           </p>
         </div>
-        <img class="feature-image" src="${asset("vadam-dWX4EioR.jpg")}" alt="Devotional procession scene" />
+        <img class="feature-image" src="${asset("tiruchendur-murugan-alangaram.png")}" alt="Murugan alangaram" />
       </div>
       <div class="guide-grid">
         ${guideCard("The Vel", "Murugan's divine spear is central to the story of victory over Surapadman.")}
@@ -395,7 +395,7 @@ function renderLocation() {
           <div id="locationResult" class="location-result" role="status"></div>
         </div>
         <div class="parking-map">
-          <img src="${asset("parking-map-BXw7iFp8.png")}" alt="Map style guide panel" />
+          <img src="${asset("tiruchendur-gopuram-blue-sky.png")}" alt="Tiruchendur temple gopuram" />
         </div>
       </div>
       <div class="guide-grid">
@@ -416,7 +416,7 @@ function renderVisitor() {
           <h2>Simple support points for devotees and travellers.</h2>
           <p>Keep essentials visible: emergency numbers, map access, water, footwear planning, and crowd-aware movement during major festivals.</p>
         </div>
-        <img class="feature-image" src="${asset("theppakulam-CF4UAQ5l.jpg")}" alt="Temple water area" />
+        <img class="feature-image" src="${asset("tiruchendur-murugan-valli-deivanai.png")}" alt="Murugan with Valli and Deivanai" />
       </div>
       <div class="contact-grid">
         ${contactCard("Emergency", "112", "National emergency response")}
@@ -743,3 +743,16 @@ window.addEventListener("hashchange", () => {
 
 
 
+
+
+
+function hideSplashScreen() {
+  const splash = document.querySelector("#splashScreen");
+  if (!splash) {
+    return;
+  }
+  window.setTimeout(() => splash.classList.add("is-hidden"), 900);
+}
+
+window.addEventListener("load", hideSplashScreen);
+window.setTimeout(hideSplashScreen, 2400);

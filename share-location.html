@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="share-page">
+    <div class="splash-screen" id="splashScreen" aria-label="Chariot Tracker loading">
+      <img src="assets/chariot-tracker-splash.png" alt="Chariot Tracker" />
+    </div>
     <main class="share-panel">
       <img class="share-logo" src="assets/tiruchendur-logo.png" alt="" />
       <span class="section-kicker">Chariot GPS sharing phone</span>
@@ -59,7 +62,7 @@
       const lngValue = document.querySelector("#lngValue");
       const accuracyValue = document.querySelector("#accuracyValue");
       const sentValue = document.querySelector("#sentValue");
-      const defaultTrackerApiBase = "https://live-location-tracker-g1i6.onrender.com";
+      const defaultTrackerApiBase = "https://live-location-tracker1.onrender.com";
       const trackerApiBase = getTrackerApiBase();
       const viewTrackerLink = document.querySelector("#viewTracker");
       const chariotLocationApi = `${trackerApiBase}/api/chariot-location`;
@@ -73,6 +76,7 @@
       let accuracyCircle = null;
 
       initTrackerLink();
+      hideSplashScreen();
       initFileWarning();
       initMap();
 
@@ -103,6 +107,14 @@
         setStatus("Sharing stopped. The last sent location remains visible to viewers until a new update is sent.");
       });
 
+
+      function hideSplashScreen() {
+        const splash = document.querySelector("#splashScreen");
+        if (!splash) {
+          return;
+        }
+        window.setTimeout(() => splash.classList.add("is-hidden"), 900);
+      }
       function initTrackerLink() {
         const params = new URLSearchParams(window.location.search);
         const siteFromUrl = params.get("site") || mainWebsiteUrl;
@@ -238,6 +250,9 @@
     </script>
   </body>
 </html>
+
+
+
 
 
 
