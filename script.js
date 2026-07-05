@@ -316,8 +316,7 @@ function renderChariot() {
             Open the sharing page on the phone travelling with the chariot and start sharing. This map can use a public HTTPS tracker server, so both phones do not need to be on the same Wi-Fi.
           </p>
           <div class="button-row">
-            <a class="action-link" href="${getSharingPageUrl()}" target="_blank" rel="noreferrer">Open Sharing Page</a>
-            <button class="action-button is-alt" id="refreshChariotLocation" type="button">Refresh Marker</button>
+            <button class="action-button" id="refreshChariotLocation" type="button">Refresh Marker</button>
           </div>
           <div id="chariotStatus" class="location-result is-visible" role="status">Waiting for chariot location from the sharing phone...</div>
         </div>
@@ -756,6 +755,7 @@ function hideSplashScreen() {
 
 window.addEventListener("load", hideSplashScreen);
 window.setTimeout(hideSplashScreen, 2400);
+
 
 
 
