@@ -21,7 +21,7 @@ const sections = [
     kicker: "Murugan temple on the Bay of Bengal",
     heroText:
       "A sacred Arupadai Veedu shrine dedicated to Murugan, known for its seashore setting, Surasamharam festival, and Tamil temple architecture.",
-    image: asset("tiruchendur-murugan-seashore.png"),
+    image: asset("tiruchendur-main-front.png"),
     color: "rgba(185, 54, 42, 0.72)",
   },
   {
@@ -234,7 +234,7 @@ function renderHome() {
           </p>
           <div class="button-row">
             <button class="action-button" type="button" data-view-link="overview">Temple Details</button>
-            <button class="action-button is-alt" type="button" data-view-link="chariot">Track Car</button>
+            <button class="action-button track-card-button" type="button" data-view-link="chariot">Track Car</button>
           </div>
         </div>
         <img class="feature-image" src="${asset("tiruchendur-gopuram-blue-sky.png")}" alt="Tiruchendur temple gopuram" />
@@ -243,7 +243,7 @@ function renderHome() {
       <div class="stat-grid">
         ${infoCard("Murugan", "Main deity of the temple")}
         ${infoCard("Arupadai Veedu", "One of the Six Abodes of Murugan")}
-        ${infoCard("Live Map", "Chariot marker updates from the sharing phone")}
+        ${infoCard("Live Tracker", "Open the large Track Car button to see the chariot position")}
         ${infoCard("Bay of Bengal", "Temple complex stands near the seashore")}
       </div>
 
@@ -426,7 +426,7 @@ function renderVisitor() {
       </div>
       <div class="button-row">
         <a class="action-link" href="${mapUrl}" target="_blank" rel="noreferrer">Open Temple Map</a>
-        <button class="action-button is-alt" type="button" data-view-link="chariot">Track Car</button>
+        <button class="action-button track-card-button" type="button" data-view-link="chariot">Track Car</button>
       </div>
     </div>
   `;
@@ -532,9 +532,9 @@ function createChariotIcon() {
   return L.divIcon({
     className: "chariot-map-icon",
     html: '<img src="assets/vel-marker.png" alt="" />',
-    iconSize: [50, 50],
-    iconAnchor: [25, 25],
-    popupAnchor: [0, -24],
+    iconSize: [64, 64],
+    iconAnchor: [32, 32],
+    popupAnchor: [0, -30],
   });
 }
 
@@ -559,7 +559,7 @@ async function fetchChariotLocation(showLoading) {
     const data = await response.json();
     if (!data || !data.hasLocation) {
       if (status) {
-        status.textContent = "No chariot location received yet. Open the sharing page on the chariot phone and start sharing.";
+        status.textContent = "Please wait, location will be shared soon.";
       }
       return;
     }
@@ -756,3 +756,6 @@ function hideSplashScreen() {
 
 window.addEventListener("load", hideSplashScreen);
 window.setTimeout(hideSplashScreen, 2400);
+
+
+

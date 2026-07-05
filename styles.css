@@ -960,3 +960,20 @@ img {
     transition: none;
   }
 }
+
+.hero-track-button {
+  font-size: 1.05rem;
+  min-height: 56px;
+  padding: 0 28px;
+}
+
+.track-card-button {
+  font-size: 1rem;
+  min-height: 52px;
+  padding: 0 22px;
+}
+
+.chariot-map-icon img {
+  height: 64px;
+  width: 64px;
+}
